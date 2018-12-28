@@ -1,0 +1,62 @@
+class Boy{
+	
+public String name;
+	
+public int age;
+	
+public void getData(){
+		
+name="KK";
+		
+age=50;
+
+}
+	
+public void putData(){
+		
+System.out.println("\nName :"+name+"Age :"+age);
+	
+}
+
+}
+
+
+class Student extends Boy{
+	
+private int stuid;
+	
+private double marks;
+	
+public void getData(){
+		
+name="karan kamat";
+		
+age=49;
+		
+stuid=5689;
+		
+marks=90.6;
+	
+}
+	
+public void display(){
+		
+System.out.println("\nName :"+name+"Age :"+age+"\nStudent ID :"+stuid+"Marks :"+marks);
+	
+}
+
+}
+
+
+public class ovrride8{
+	
+public static void main(String arhs[]){
+		
+Student s1=new Student();
+		
+s1.getData();
+		
+s1.display();
+	
+}
+}

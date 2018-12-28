@@ -1,0 +1,89 @@
+class Employee{
+	
+public int empid;
+	
+public String name;
+	
+public void getData(){
+		
+empid=164021;
+		
+name="Karan K@mat";
+	
+}
+	
+public void putData(){
+System.out.println("\nEmployee ID :"+empid+"Employee Name :"+name);
+	
+}
+
+}
+
+
+class Manager extends Employee{
+	
+public int manID;
+	
+public String projN;
+	
+public void gain(){
+		
+manID=0555;
+		
+projN="Database Connection";
+	}
+	
+public void put(){
+		
+System.out.println("\nManager ID :"+manID+"Manager Name :"+projN);
+	
+}
+
+}
+
+
+class Engineer extends Manager{
+	
+public int prodid;
+	
+public double sal;
+	
+public void get(){
+		
+prodid=5124;
+		
+sal=74000;
+	
+}
+	
+public void display(){
+		
+System.out.println("\nProduct ID :"+prodid+"Salary :"+sal);
+
+}
+
+}
+
+
+public class MultiLvl7{
+	
+public static void main(String args[]){
+		
+Engineer e1=new Engineer();
+		
+e1.getData();
+		
+e1.gain();
+		
+e1.get();
+		
+e1.putData();
+		
+e1.put();
+		
+e1.display();
+	
+}
+
+}
+
