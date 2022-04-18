@@ -22,6 +22,7 @@ public class percentage {
 
         marks=maths+eng+sci+civ+geo;
         percentage=(marks/totalmarks)*100;
+        System.out.println("Name:" + name);
         System.out.println("Marks Obtained:" + marks);
         System.out.println("Total Marks:" + totalmarks);
         System.out.println("Final Percentage:" + percentage);
